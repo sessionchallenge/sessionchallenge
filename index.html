@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Session Challenge</title>
+    <script src="https://code.angularjs.org/1.4.5/angular.min.js"> </script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js\app.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css\main.css">
+    <link rel="stylesheet" type="text/css" href="plugins\font-awesome\css\font-awesome.min.css">
+
+  </head>
+  <body>
+    <div ng-app="webApp">
+      <div class="container-fluid" ng-controller="MainController">
+      <div class="row">
+        <div class="col-sm-3">
+          <p><em>Product Team</em></p>
+          <h3 class="">Session Challenge</h3>
+          <div>
+            <button ng-click="spin=!spin">Spin</button>
+          </div>
+        </div>
+            <div class="col-sm-9">
+                  <div>
+
+                    <div class="arrow-pos">
+                      <i class="fa fa-long-arrow-right"></i>
+                  </div>
+                    <div id="piechart" style="width:60%; height: 800px;margin:0 auto" ng-class="{'spin-wheel':spin==true, 'spin-wheel-stop':spin==false}"></div>
+                  </div>
+            </div>
+        </div>
+      </div>
+
+
+    </div>
+
+  </body>
+</html>
